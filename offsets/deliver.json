@@ -1,0 +1,208 @@
+{
+  "version": "6aebc4da",
+  "dll": "(set via --dll or CS2RE_DLL)",
+  "elapsed": 36.2,
+  "offsets": {
+    "dwViewMatrix": "0x2570250",
+    "dwViewAngles": "0x2570188",
+    "dwEntityList": "0x271fbb8",
+    "dwLocalPlayerController": "0x2542548",
+    "dwLocalPlayerPawn": "0x223f4c8",
+    "dwSensitivity": "0x2567c48",
+    "dwGameTypes": "0x1e2740"
+  },
+  "confident": {
+    "dwViewMatrix": true,
+    "dwViewAngles": true,
+    "dwEntityList": true,
+    "dwLocalPlayerController": true,
+    "dwLocalPlayerPawn": true,
+    "dwSensitivity": true,
+    "dwGameTypes": true
+  },
+  "detail": [
+    {
+      "key": "dwViewMatrix",
+      "rva": 39256656,
+      "score": 100,
+      "dynamic": 100,
+      "static": 27,
+      "confident": true,
+      "notes": [
+        "被引用 8 次",
+        "按索引访问",
+        "步长 0x40 符合"
+      ],
+      "expect": 39256656,
+      "agree": true,
+      "aliases": []
+    },
+    {
+      "key": "dwViewAngles",
+      "rva": 39256456,
+      "score": 100,
+      "dynamic": 95,
+      "static": 45,
+      "confident": true,
+      "notes": [
+        "被引用 2 次",
+        "按索引访问",
+        "步长 0x8 符合",
+        "与锚点同函数（距 0x9b）",
+        "矩阵反推 pitch=0.073 yaw=30.485"
+      ],
+      "expect": 39256456,
+      "agree": true,
+      "aliases": []
+    },
+    {
+      "key": "dwEntityList",
+      "rva": 41024440,
+      "score": 100,
+      "dynamic": 100,
+      "static": 17,
+      "confident": true,
+      "notes": [
+        "被引用 956 次",
+        "按索引访问",
+        "同值别名 2 个：0x23c0a10, 0x2550e18（都指向同一对象，均可使用）"
+      ],
+      "expect": 41024440,
+      "agree": true,
+      "aliases": [
+        37489168,
+        39128600
+      ]
+    },
+    {
+      "key": "dwLocalPlayerController",
+      "rva": 39069000,
+      "score": 100,
+      "dynamic": 100,
+      "static": 17,
+      "confident": true,
+      "notes": [
+        "被引用 20 次",
+        "按索引访问",
+        "同值别名 1 个：0x21d7f50（同一对象，均可使用）"
+      ],
+      "expect": 39069000,
+      "agree": true,
+      "aliases": [
+        35487568
+      ]
+    },
+    {
+      "key": "dwLocalPlayerPawn",
+      "rva": 35910856,
+      "score": 100,
+      "dynamic": 100,
+      "static": 5,
+      "confident": true,
+      "notes": [
+        "被引用 4 次",
+        "同值别名 1 个：0x256a948（同一对象，均可使用）"
+      ],
+      "expect": 35910856,
+      "agree": true,
+      "aliases": [
+        39233864
+      ]
+    },
+    {
+      "key": "dwSensitivity",
+      "rva": 39222344,
+      "score": 100,
+      "dynamic": 100,
+      "static": 0,
+      "confident": true,
+      "notes": [
+        "client.dll+0x2567c48 的对象 +0x00 名字串 = 'sensitivity' —— 名字自证，无需其他证据",
+        "+0x58 当前值 int=1062501089 float=0.8300",
+        "+0x20 描述 = 'Mouse sensitivity.'",
+        "同类近名 1 个（已按精确名取，不会误取）"
+      ],
+      "expect": 39222344,
+      "agree": true,
+      "aliases": []
+    },
+    {
+      "key": "dwGameTypes",
+      "rva": 1976128,
+      "score": 100,
+      "dynamic": 100,
+      "static": 0,
+      "confident": true,
+      "notes": [
+        "matchmaking.dll+0x1e2740 的对象 +0x00 名字串 = 'game_type' —— 名字自证，无需其他证据",
+        "+0x58 当前值 int=1 float=0.0000",
+        "+0x20 描述 = 'The current game type. See GameModes.txt.'"
+      ],
+      "expect": 1976128,
+      "agree": true,
+      "aliases": []
+    }
+  ],
+  "schema_fields": {
+    "m_iHealth": "0x34c",
+    "m_iMaxHealth": "0x348",
+    "m_lifeState": "0x354",
+    "m_iTeamNum": "0x3e7",
+    "m_ArmorValue": "0x1ed0",
+    "m_fFlags": "0x3f4",
+    "m_vecVelocity": "0x430",
+    "m_vecViewOffset": "0xf60",
+    "m_angEyeAngles": "0x3600",
+    "m_iShotsFired": "0x1eb8",
+    "m_pGameSceneNode": "0x330",
+    "m_pWeaponServices": "0x12f0",
+    "m_pCameraServices": "0x1328",
+    "m_pAimPunchServices": "0x1598",
+    "m_pMovementServices": "0x1330",
+    "m_pBulletServices": "0x1570",
+    "m_pRenderComponent": "0x338",
+    "m_hController": "0x14bc",
+    "m_hPlayerPawn": "0x92c",
+    "m_iPing": "0x838",
+    "m_bPawnHasDefuser": "0x940",
+    "m_bPawnHasHelmet": "0x941",
+    "m_bIsPlayerNameDirty": "0x974",
+    "m_hMyWeapons": "0x48",
+    "m_hActiveWeapon": "0x60",
+    "m_hLastWeapon": "0x64",
+    "m_iItemDefinitionIndex": "0x1ba",
+    "m_iEntityQuality": "0x1bc",
+    "m_AttributeManager": "0x1290",
+    "m_bInitialized": "0x1e8",
+    "m_bDisallowSOC": "0x1e9",
+    "m_iItemIDHigh": "0x1d0",
+    "m_iItemIDLow": "0x1d4",
+    "m_iBurstShotsRemaining": "0x1f24",
+    "m_iFOV": "0x298",
+    "m_iFOVStart": "0x29c",
+    "m_flFOVTime": "0x2a0",
+    "m_flFOVRate": "0x2a4",
+    "m_vecCsViewPunchAngle": "0x48",
+    "m_vecOrigin": "0x80",
+    "m_angAbsRotation": "0xd4",
+    "m_bSpotted": "0x8",
+    "m_bSpottedByMask": "0xc",
+    "m_hOwnerEntity": "0x520",
+    "m_hGroundEntity": "0x530",
+    "m_steamID": "0x788",
+    "m_iszPlayerName": "0x6fc",
+    "m_pActionTrackingServices": "0x828",
+    "m_hObserverPawn": "0x930",
+    "m_iNumRoundKills": "0x128",
+    "m_flTotalRoundDamageDealt": "0x130",
+    "m_iIDEntIndex": "0x36dc",
+    "m_bIsScoped": "0x1ea0",
+    "m_pObserverServices": "0x1308",
+    "m_hObserverTarget": "0x4c",
+    "m_nBombSite": "0x128c",
+    "m_flTimerLength": "0x12c0",
+    "m_predictableBaseAngle": "0x50"
+  },
+  "schema_agree": 58,
+  "schema_total": 58
+}

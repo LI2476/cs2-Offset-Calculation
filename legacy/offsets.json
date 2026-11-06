@@ -1,0 +1,108 @@
+{
+  "version": "6ae91e98",
+  "dll": "(set via --dll or CS2RE_DLL)",
+  "elapsed": 34.3,
+  "offsets": {
+    "dwViewMatrix": "0x256f250",
+    "dwViewAngles": "0x256f188",
+    "dwEntityList": "0x271eba8",
+    "dwLocalPlayerController": "0x2541538",
+    "dwLocalPlayerPawn": "0x2569948"
+  },
+  "confident": {
+    "dwViewMatrix": true,
+    "dwViewAngles": true,
+    "dwEntityList": true,
+    "dwLocalPlayerController": true,
+    "dwLocalPlayerPawn": true
+  },
+  "detail": [
+    {
+      "key": "dwViewMatrix",
+      "rva": 39252560,
+      "score": 100,
+      "dynamic": 95,
+      "static": 27,
+      "confident": true,
+      "notes": [
+        "被引用 8 次",
+        "按索引访问",
+        "步长 0x40 符合"
+      ],
+      "expect": 39252560,
+      "agree": true,
+      "aliases": []
+    },
+    {
+      "key": "dwViewAngles",
+      "rva": 39252360,
+      "score": 100,
+      "dynamic": 95,
+      "static": 45,
+      "confident": true,
+      "notes": [
+        "被引用 2 次",
+        "按索引访问",
+        "步长 0x8 符合",
+        "与锚点同函数（距 0x9b）",
+        "矩阵反推 pitch=-0.000 yaw=41.630"
+      ],
+      "expect": 39252360,
+      "agree": true,
+      "aliases": []
+    },
+    {
+      "key": "dwEntityList",
+      "rva": 41020328,
+      "score": 100,
+      "dynamic": 100,
+      "static": 17,
+      "confident": true,
+      "notes": [
+        "被引用 956 次",
+        "按索引访问",
+        "同值别名 2 个：0x23bfa10, 0x254fe18（都指向同一对象，均可使用）",
+        "基准 0x23bfa10 是本答案的别名"
+      ],
+      "expect": 37485072,
+      "agree": true,
+      "aliases": [
+        37485072,
+        39124504
+      ]
+    },
+    {
+      "key": "dwLocalPlayerController",
+      "rva": 39064888,
+      "score": 100,
+      "dynamic": 100,
+      "static": 17,
+      "confident": true,
+      "notes": [
+        "被引用 20 次",
+        "按索引访问",
+        "同值别名 1 个：0x21d6f50（同一对象，均可使用）",
+        "基准 0x21d6f50 是本答案的别名"
+      ],
+      "expect": 35483472,
+      "agree": true,
+      "aliases": [
+        35483472
+      ]
+    },
+    {
+      "key": "dwLocalPlayerPawn",
+      "rva": 39229768,
+      "score": 100,
+      "dynamic": 100,
+      "static": 0,
+      "confident": true,
+      "notes": [
+        "代码零 RIP 引用（指针类正常，靠语义门定案）"
+      ],
+      "expect": 39229768,
+      "agree": true,
+      "aliases": []
+    }
+  ]
+}

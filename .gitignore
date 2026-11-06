@@ -1,0 +1,21 @@
+# 第三方二进制，不入库
+*.exe
+*.dll
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# 运行时缓存与输出（工具自己生成，别提交）
+_cache/
+*.npz
+out/
+auto-scan-*.txt
+verify-live-*.txt
+verify-all39-*.txt
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+Thumbs.db
