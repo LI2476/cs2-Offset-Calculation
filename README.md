@@ -81,7 +81,3 @@ python -m cs2re.auto --dll "<Steam 库>\Counter-Strike Global Offensive\game\cs2
 
 不带 `--dll` 时读取环境变量 `CS2RE_DLL`。Windows 下也可以直接双击
 `一键扫描.bat`。三种模式（离线 / 实时 / 只验证）和故障排查见 `怎么用.md`。
-
-## 许可证
-
-未指定。若要开源发布，自己挑一个 LICENSE 放进根目录。
